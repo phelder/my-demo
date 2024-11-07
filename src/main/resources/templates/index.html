@@ -8,6 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello <span th:text="${name}"></span></h1>
+    <h1>Hello</h1>
+    <ul>
+        <li th:each="person : ${personList}" th:text="${person.getName()}"></li>
+    </ul>
 </body>
 </html>
